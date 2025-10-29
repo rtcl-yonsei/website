@@ -181,6 +181,64 @@
                                             <ol reversed="reversed" class="normal">
 <!-------------------------------- Selected -------------------------------->
 
+                                                <div class="item mix jpaper spaper" data-year="202601">
+                                                    <div class="pubmain">
+                                                      <div class="pubassets">
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <!--<a href="" class="tooltips" title="Bib" target="_blank">
+                                                                <i class="fa fa-file-alt"></i>
+                                                            </a>-->
+                                                            <a href="https://doi.org/10.1109/TSUSC.2025.3611159" class="tooltips" title="Link" target="_blank">
+                                                                <i class="fa fa-external-link"></i>
+                                                            </a>
+                                                            <a href="./papers/.pdf" class="tooltips" title="Download" target="_blank">
+                                                                <i class="fa fa-cloud-download"></i>
+                                                            </a>
+                                                        </div>
+                                                        <h4 class="pubtitle"><li>Leveraging Customized Heterogeneous Batteries to Alleviate Low Battery Experience for Mobile Users</h4>
+                                                        <div class="pubauthor"> <strong>Jaeheon Kwak</strong>, Sunjae Lee, Dae R. Jeong, Arjun Kumar, Dongjae Shin, Ilju Kim, Donghwa Shin, Kilho Lee, <strong>Jinkyu Lee</strong>, and Insik Shin</div>
+                                                        <div class="pubcite">IEEE Transactions on Sustainable Computing, To appear</div>
+                                                        <span class="label label-primary">Selected</span><span class="label label-success">Journal Paper</span>
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>
+                                                            Even with advances in single-cell batteries, mobile
+users still experience low battery anxiety. By analyzing 19,855
+hours of user behavior, we propose MixMax, a heterogeneous
+battery system consisting of three complementary battery types
+tailored to minimizing low battery time. While the heterogeneous
+battery system offers an opportunity to simultaneously improve
+capacity and charging speed, one must face non-trivial challenges
+to design charge/discharge policies during runtime and determine
+the ratio of enclosed batteries. They are highly dependent on each
+other, which entails almost infinite candidates for the choice.
+MixMax simplifies this by reformulating the problem as an
+optimization problem, breaking it down into manageable sub-
+problems. However, MixMax still faces the challenge of catering
+to all users due to their diverse battery usage patterns. To address
+this, we introduce a customized MixMax that groups users based
+on their usage patterns and provides tailored battery solutions.
+In evaluating MixMax, we fabricate coin-cell batteries, develop
+a precise battery emulator using the fabricated batteries, and
+prototype MixMax on a real-world smartphone. Our evaluation
+shows that MixMax reduces low battery time by up to 24.6%
+without compromising capacity, volume, weight, or user behavior,
+and its customized version can further reduce it by up to 46.2%.</p>
+                                                        <br>
+                                                        <h4>Bibtex</h4>
+                                                        <p>
+                                                        </p>
+                                                        <br>
+                                                        <h4>Journal Information</h4>
+                                                        <p>
+                                                        ISSN: 1551-3203
+                                                        </p>
+
+                                                    </div>
+                                                </div>
 
                                      <div class="item mix cpaper spaper" data-year="202512">
                                                     <div class="pubmain">
@@ -206,6 +264,33 @@
                                                     <div class="pubdetails">
                                                         <h4>Abstract</h4>
                                                         <p> 
+                                                        Consensus algorithms are widely adopted in clus-
+tered systems to distribute data efficiently, with Raft being a
+prominent failover algorithm due to its effectiveness and fault
+tolerance. However, Raft and other consensus algorithms do not
+provide timing guarantees, limiting their application to time-
+critical systems such as industrial control systems, drone swarms,
+and autonomous vehicle networks, where it is critical to distribute
+state machines in time and prevent multiple timing misses of data.
+In this paper, we propose CARTEL (Consensus Adapting
+Real-Time and Efficient Logging), a novel consensus algorithm
+that integrates time-predictability into the Raft framework. To
+achieve this aim, we examine Raft's mechanisms and identify the
+characteristics that impact the timing of data propagation within
+a distributed system. Based on these insights, we design CAR-
+TEL by developing two mechanisms that address the primary
+limitations of Raft: (i) CARTEL voting to solve the uncertainty
+of leader election timing, and (ii) CARTEL node buffer to
+limit the number of indeterminately deferred data during leader
+failure. Moreover, we propose how to utilize the mechanisms of
+CARTEL to ensure time-predictability in leader elections and
+mitigate the indeterminate nature of data logging during leader
+transitions, without harming the integrity of Raft. We validate
+the effectiveness of CARTEL through real-world implementation.
+The experiments confirm that CARTEL not only reduces the
+uncertainty of system recovery inherent in the election process
+(by 65.7% compared to Raft) but also enhances the integrity of
+the distributed system by guaranteeing timely data logging.
                                                         </p>
                                                         <br>
                                                         <h4>Bibtex</h4>
@@ -242,6 +327,30 @@
                                                     <div class="pubdetails">
                                                         <h4>Abstract</h4>
                                                         <p> 
+                                                        The development of parallel computing architec-
+tures has created a growing need for scheduling real-time gang
+tasks, in which a specified number of threads per task must
+be executed simultaneously under timing constraints. However,
+existing approaches struggle to handle a fundamental challenge-
+the heterogeneity in the number of threads across gang tasks.
+To address the challenge, this paper proposes a novel schedul-
+ing framework, called Recursive Partitioned Scheduling (RPS),
+in which each partition can be recursively divided into sub-
+partitions whose assigned processor sets are disjoint and collec-
+tively equal to that of the parent, forming a tree-like hierarchical
+structure. RPS provides a flexible interface that allows each task
+to be assigned to an appropriate level in the hierarchy based on
+the number of threads it requires. To fully exploit RPS, we adopt
+fixed-priority scheduling and address two key issues. First, we
+develop a tight schedulability analysis, which not only utilizes the
+well-known exact schedulability analysis results for uniprocessor
+scheduling but also leverages the relationship between intra-
+and inter-partition interference. Second, based on the insights
+from the analysis, we design an effective partition generation
+and task assignment algorithm specialized for RPS, and further
+enhance it through task priority reassignment. Simulation results
+demonstrate that our approach significantly outperforms existing
+approaches in terms of schedulability.
                                                         </p>
                                                         <br>
                                                         <h4>Bibtex</h4>
@@ -278,6 +387,34 @@
                                                     <div class="pubdetails">
                                                         <h4>Abstract</h4>
                                                         <p> 
+                                                        Detection Transformers (DETR) are increasingly
+adopted in autonomous vehicle (AV) perception systems due to
+their superior accuracy over convolutional networks. However,
+concurrently executing multiple DETR tasks presents significant
+challenges in meeting firm real-time deadlines (R1) and high
+accuracy requirements (R2), particularly for safety-critical ob-
+jects, while navigating the inherent latency-accuracy trade-off
+under resource constraints. Existing real-time DNN scheduling
+approaches often treat models generically, failing to leverage
+Transformer-specific properties for efficient resource allocation.
+To address these challenges, we propose CF-DETR, an integrated
+system featuring a novel coarse-to-fine Transformer architecture
+and a dedicated real-time scheduling framework NPFP**. CF-
+DETR employs three key strategies (A1: coarse-to-fine inference,
+A2: selective fine inference, A3: multi-level batch inference) that
+exploit Transformer properties to dynamically adjust patch gran-
+ularity and attention scope based on object criticality, aiming to
+satisfy R2. The NPFP** scheduling framework (A4) orchestrates
+these adaptive mechanisms A1-A3. It partitions each DETR task
+into a safety-critical coarse subtask for guaranteed critical object
+detection within its deadline (ensuring R1), and an optional fine
+subtask for enhanced overall accuracy (R2), while managing
+individual and batched execution. Our extensive evaluations
+on server, GPU-enabled embedded platforms, and actual AV
+platforms demonstrate that CF-DETR, under an NPFP** policy,
+successfully meets strict timing guarantees for critical operations
+and achieves significantly higher accuracy compared to existing
+baselines across diverse AV workloads.
                                                         </p>
                                                         <br>
                                                         <h4>Bibtex</h4>
@@ -314,6 +451,30 @@
                                                     <div class="pubdetails">
                                                         <h4>Abstract</h4>
                                                         <p> 
+                                                        Edge devices for robotics in hazardous environ-
+ments, such as rescue drones, navigate complex terrains while
+transmitting images to remote servers for anomaly detection,
+including wildfires. However, these devices operate under strict
+resource constraints, prioritizing operational-critical tasks (e.g.,
+autonomous navigation) while handling image-processing work-
+loads with minimal overhead. Offloading computation to a
+remote server can alleviate this burden, but unstable network
+conditions can degrade accuracy and timeliness. To address
+these challenges, this paper presents a novel offloading frame-
+work that balances computational efficiency and accuracy in
+image-processing tasks. Specifically, it ensures (R1) a minimum
+accuracy level for individual image-processing tasks associated
+with different camera sensors and (R2) maximizes the overall
+image-processing accuracy across all sensors. Our approach
+builds on an edge-server collaborative image reconstruction
+architecture, where images are divided into patches and se-
+lectively reconstructed. To achieve R1 and R2, we introduce:
+(i) a hierarchical scheduler that effectively prioritizes patch
+transmissions under resource constraints and (ii) a feedback
+mechanism that adapts to network instability, ensuring reliable
+offloading and inference. Experimental results demonstrate that
+our framework maintains high accuracy and timely processing,
+even under network failures.
                                                         </p>
                                                         <br>
                                                         <h4>Bibtex</h4>
@@ -351,6 +512,29 @@
                                                     <div class="pubdetails">
                                                         <h4>Abstract</h4>
                                                         <p> 
+                                                        Dynamic Voltage and Frequency Scaling (DVFS) is a key
+technology for enhancing power efficiency in computing devices. However,
+conventional DVFS methods struggle with the unique demands of mobile
+devices. Recent reinforcement learning (RL)-based approaches address
+this by tailoring to mobile-specific thermal and workload characteristics.
+Yet, these solutions make frequency adjustments that ignore device-
+specific configurations calibrated by vendors, neglect the impact of
+ambient and non-processor components-such as battery, display, and
+integrated circuits-that significantly affect processor thermal manage-
+ment, and rely on fixed environment-dependent parameters, limiting
+adaptability across different environments. To address these limitations,
+we propose EarDVFS, an environment-adaptable RL-based solution that
+employs proactive throttling to combine the strengths of traditional and
+RL-based methods, considers the temperatures of ambient and non-
+processor components for better thermal management, and features an
+environment-robust RL parameter design. Extensive experiments across
+varying ambient temperatures, devices, and workloads demonstrate
+that EarDVFS consistently enhances power efficiency by an average of
+21.6% and up to 49.6% compared to default DVFS while maintaining
+performance. Furthermore, we conduct comprehensive ablation studies
+on the action, state, and reward elements of our RL model, confirming
+that each element significantly contributes to EarDVFSs adaptability and
+effectiveness across diverse thermal environments.
                                                         </p>
                                                         <br>
                                                         <h4>Bibtex</h4>
