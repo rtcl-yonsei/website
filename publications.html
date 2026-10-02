@@ -126,8 +126,8 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <h4><b><i>IEEE Real-Time Systems Symposium</i> (RTSS)</b>: <b><i>Top 1 RT conference, BK21+ IF4, around 30~40 papers yearly published</i></b> <br>
-                                            &nbsp&nbsp&nbsp- <b>25 papers</b> published in total<br>
-                                            &nbsp&nbsp&nbsp- <b>14 consecutive years</b> published (2012-2025)</p>
+                                            &nbsp&nbsp&nbsp- <b>26 papers</b> published in total<br>
+                                            &nbsp&nbsp&nbsp- <b>15 consecutive years</b> published (2012-2026)</p>
                                             <p><b><i>Other Top-tier International Conference Papers</i></b> &nbsp  <br>
                                             &nbsp&nbsp&nbsp- <b>RTAS</b> 10, <b>MobiSys</b> 1, <b>DAC</b> 2, <b>EMSOFT</b> 2, <b>ECRTS</b> 1, <b>ICCAD</b> 1, <b>PerCom</b> 1, <b>AAAI</b> 1, <b>IJCAI</b> 1, <b>IROS</b> 1, <b>ICCPS</b> 2, <b>ICPR</b> 3, <b>SAC</b> 2</p>
                                             <p><b><i>Top-tier International Journal Papers</i></b> &nbsp<br>
@@ -180,6 +180,74 @@
                                             <div class="pitems">
                                             <ol reversed="reversed" class="normal">
 <!-------------------------------- Selected -------------------------------->
+
+                                     <div class="item mix cpaper spaper" data-year="202612">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <!--<a href="" class="tooltips" title="Bib" target="_blank">
+                                                                <i class="fa fa-file-alt"></i>
+                                                            </a>-->
+                                                            <a href="https://doi.org/10.1109/" class="tooltips" title="Link" target="_blank">
+                                                                <i class="fa fa-external-link"></i>
+                                                            </a>
+                                                            <a href="./papers/" class="tooltips" title="Download" target="_blank">
+                                                                <i class="fa fa-cloud-download"></i>
+                                                            </a>
+                                                        </div>
+                                                        <h4 class="pubtitle"><li>Orchestrating Test-Time Adaptation for Timely and Accurate DNN Inference</h4>
+                                                        <div class="pubauthor"> <strong>Wonyeong Lee</strong>, <strong>Seongtae Lee</strong>, <strong>Seunghoon Lee</strong>, <strong>Jinsoo Park</strong>, and <strong>Jinkyu Lee</strong></div>
+                                                        <div class="pubcite">The 47th IEEE Real-Time Systems Symposium (RTSS), Yokohama, 9th December 2026 </div>
+                                                        <span class="label label-primary">Selected</span><span class="label label-warning">Conference Paper</span>
+                                                    </div>     
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p> 
+                                                    Deep neural networks (DNNs) have become indispensable
+for real-time perception on safety-critical edge platforms
+such as autonomous vehicles and surveillance drones, where inference
+must meet strict per-frame deadlines. However, real-world
+deployment inevitably exposes DNNs to domain shifts caused by
+environmental changes like fog, rain, or sensor aging, significantly
+degrading inference accuracy. To address this, Test-Time Adaptation
+(TTA) has recently emerged as a promising paradigm that
+adapts deployed models online using only unlabeled test streams.
+Most existing TTA methods, however, focus solely on adaptation
+effectiveness and overlook timing requirements, rendering them
+infeasible for safety-critical systems.
+To bridge the gap, we develop RT-TTA with three key components,
+which is the first real-time TTA system that jointly
+achieves two conflicting goals from both run-time and designtime
+perspectives: (G1) inference accuracy enhancement through
+adaptation, and (G2) timely inference of periodic real-time
+perception tasks. First, we design a timing-controllable execution
+architecture that enables flexible orchestration of inference and
+adaptation; the architecture provides a novel execution interface
+to resolve the uncovered fundamental challenges that hinder the
+deployment of TTA in real-time inference. Second, built upon
+this architecture, we develop an inference-adaptation coordinated
+scheduling framework that maximizes adaptation performance
+while preserving timely inference, thereby achieving G1 and G2
+at run-time. Third, we derive a design-time predictability analysis
+that certifies both timely inference and adaptation progress
+under the proposed scheduling framework, realizing G1 and G2
+at design-time. Experimental results on NVIDIA Jetson Orin
+Nano under ImageNet-C domain shifts demonstrate that RT-TTA
+simultaneously achieves substantial accuracy recovery and zero
+deadline misses across multi-task workloads.
+                                                        </p>
+                                                        <br>
+                                                        <h4>Bibtex</h4>
+                                                        <p>
+                                                        </p>
+                                                        <br>
+                                                        <h4>Conference Information</h4>
+                                                        <p>
+                                                        </p>
+                                                    </div>  
+                                                </div>
 
                                                 <div class="item mix cpaper spaper" data-year="202607">
                                                     <div class="pubmain">
